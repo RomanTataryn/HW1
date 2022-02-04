@@ -5,8 +5,8 @@ import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.Semaphore;
 
 public class Oxygen extends Thread {
-    Semaphore oxygenBarrier;
-    CyclicBarrier waterBarrier;
+    private final Semaphore oxygenBarrier;
+    private final CyclicBarrier waterBarrier;
 
     public Oxygen(Semaphore oxygenBarrier, CyclicBarrier waterBarrier) {
         this.oxygenBarrier = oxygenBarrier;

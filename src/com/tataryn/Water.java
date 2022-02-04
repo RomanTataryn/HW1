@@ -15,7 +15,9 @@ public class Water {
         for (int i = 0; i < elements.length; i++) {
             if (elements[i].equals("H")) {
                 new Hydrogen(hydrogenBarrier, waterBarrier).start();
-            } else new Oxygen(oxygenBarrier, waterBarrier).start();
+            } else {
+                new Oxygen(oxygenBarrier, waterBarrier).start();
+            }
         }
     }
 }

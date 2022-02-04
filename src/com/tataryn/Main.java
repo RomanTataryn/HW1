@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void Checkinginput(String input) throws IllegalArgumentException {
+    public static void checkInput(String input) throws IllegalArgumentException {
         for (int i = 0; i < input.length(); i++) {
             if (input.charAt(i) != 'H' && input.charAt(i) != 'O') {
                 throw new IllegalArgumentException("Wrong input!!! Enter only 'H' and 'O' elements");
@@ -16,7 +16,7 @@ public class Main {
         System.out.println("Input elements 'H' and 'O'");
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
-        Checkinginput(input);
+        checkInput(input);
         Water.releaseWater(input);
     }
 }
